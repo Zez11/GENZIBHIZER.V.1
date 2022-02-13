@@ -422,7 +422,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s👉 %s/%s - - > ok*%s - - -> cp*%s - - -> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s👉 %s/%s - - > [ok]%s - - -> [cp]%s - - -> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(uao).replace('\n','')
 	ses = requests.Session()
 	for pw in pwv:
